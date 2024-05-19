@@ -1,0 +1,10 @@
+PunchTree           # Start the program 
+SetItem 0 'dirt' 2  # Initialize a slot with a 2 dirt blocks
+Mine 0              # Increment the value in the slot 0
+Mine 0     	        # Increment the value in the slot 0
+SetItem 1 'dirt' 1  # Initialize a slot with a 2 dirt blocks
+Combine 0 1         # Add the values in slot 1 and 2 (4 + 1); store the value in slot 0 and empty slot 1
+Consume 0 1         # Subtract 1 from slot 0 (5 - 1); store the value in slot 0
+GetItem 0           # Output "You have 4 blocks of dirt"
+ShowInventory       # Check your inventory
+FallInLava          # End the program
